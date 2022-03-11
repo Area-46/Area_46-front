@@ -27,7 +27,7 @@ header{
 header .logo{
     position: relative;
     font-weight: 700;
-    color: #fff;
+    color: black;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
@@ -37,26 +37,26 @@ header .logo{
 
 header .sticky{
     padding: 5px 100px;
-    background: #fff;
+    background: black;
 }
 
-header ul{
+header .navbar-nav{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li{
+header .navbar-nav .nav-item{
     position: relative;
     list-style: none;
 }
 
-header ul li a{
+header .navbar-nav .nav-item .nav-link{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: #fff;
+    color: black;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.5s;
@@ -71,6 +71,6 @@ header ul li a{
 }
 
 header .sticky .logo,
-header .sticky ul li a{
+header .sticky .navbar-nav .nav-item .nav-link{
     color: #000;
 }
