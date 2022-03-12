@@ -2,16 +2,19 @@
 
 * {
     margin: 0;
-    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
 body{
-    background-color: #f3f3f3;
+ background-color: #000;
 }
-
+#home{
+    margin: auto;
+}
 header{
+    margin: 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -20,14 +23,17 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.6%;
-    padding: 40px 100px;
+    padding-right: 200px;
+    padding-top: 50px;
     z-index: 100000;
+    background-color: #000;
 }
 
 header .logo{
+    margin-left: 50px;
     position: relative;
     font-weight: 700;
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
@@ -37,40 +43,238 @@ header .logo{
 
 header .sticky{
     padding: 5px 100px;
-    background: black;
+    background: white;
 }
 
-header .navbar-nav{
+header ul{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header .navbar-nav .nav-item{
+header ul li{
     position: relative;
     list-style: none;
 }
 
-header .navbar-nav .nav-item .nav-link{
+header ul li a{
     position: relative;
     margin: 0 15px;
     text-decoration: none;
-    color: black;
+    color: white;
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.5s;
+    font-size: 20px;
+    display: block;
+}
+header ul li a:hover,
+header ul li a.active{
+    color: yellow;
+    background: none;
 }
 
 .banner {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 10vh;
     background: fixed;
     background-size: cover;
 }
+header .menu-btn i{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+@media (max-width: 940px) {
+    header .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+    header ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background: #111;
+        height: 100%;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    header ul li{
+        margin: 40px 0;
+        font-size: 20px;
+    }
+
+}
 
 header .sticky .logo,
-header .sticky .navbar-nav .nav-item .nav-link{
+header .sticky ul li a{
     color: #000;
 }
+
+.banner-thumb >img{
+    height: 100vh;
+    width: 100vw;
+}
+
+#home .container{
+    position: absolute;
+  font-size: 18px;
+  top:300%;
+}
+
+.banner-inner h3{
+    text-align: center;
+    margin: 10px;
+    color: white;
+}
+
+.banner-inner h1{
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 70px;
+}
+
+#menu{
+    margin-top: 100px;
+    background-color: white;
+}
+
+.col h1{
+text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-style: oblique 40deg;
+    color:black;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+
+.signature-menu{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px,1fr));
+    grid-gap: 20px 40px;
+}
+
+
+.food-items:hover{
+    box-shadow: 0 8px 12px 0 rgba(90, 90, 90, 0.411)
+}
+
+.food-items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    border-radius: 15px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    margin: 0 20px;
+    background-color: #000;
+}
+.food-items img{
+    
+    position: relative;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+    width: fit-content;
+}
+.price-menu{
+    color: yellow;
+}
+
+.title-menu{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: white;
+}
+.title-menu>h4{
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+.price-menu{
+    margin: auto;
+    text-align: right;
+}
+.details>p{
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    align-self: stretch;
+    text-align: left;
+}
+.details>button{
+    margin: auto;
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 340px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+    outline: 5;
+}
+
+
+.details>button:hover{
+    background-color: black;
+    color: white;
+}
+.btn_allmenu{
+    border-radius: 50px;
+    padding-top: 50px;
+    margin-left: 30%;
+}
+
+.btn_menu:hover{
+    background-color: black;
+    color: white;
+}
+
+.btn_menu{
+    left: 50%;
+    margin: auto;
+    background-color: yellow;
+    border: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 340px;
+    height: 50px;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+    outline: 5;
+}
+
+

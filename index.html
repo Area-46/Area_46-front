@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Area-46</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 </head>
 <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -13,11 +17,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    
 
     <link rel="stylesheet" href="css/styles_index.css" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -26,21 +31,17 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light ">
         <a href="#" class="logo">Area-46</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class = "navbar-nav ms-auto">
-            <li class="nav-item "><a class="nav-link" href="#">HOME</a></li>
-            <li class="nav-item "><a class="nav-link" href="#">MENU</a></li>
-            <li class="nav-item "><a class="nav-link" href="#">CONTACT</a></li>
-            <li class="nav-item "><a class="nav-link" href="#">ORDER</a></li>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+           <i class="fas fa-bars"></i> 
+        </label>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ORDER</a></li>
         </ul>
-    </div>
-</nav>
     </header>
     <section class="banner">
     <script type="'text/javascript">
@@ -49,6 +50,121 @@
             header.classList.toggle("sticky", window.scrollY > 0);
         })
     </script>
+    
+    <section id="home">
+        <div class="banner-thumb">
+            <img src="/images/index/header.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-8 align-self-center">
+                    <div class="banner-inner text-center">
+                        <h3>Enjoy your meal!</h3>
+                        <h1><span style="color:yellow">EAT</span> GOOD <span style="color:yellow">FEEL</span> GOOD</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
+    <section id="menu">
+            <div class="row">
+                <div class="col-lg-12 ">
+                  <div class="container">
+                  <div class="row align-items-start">
+                      <div class="col">
+                  
+              <h1><b>Our Signature menu</b></h1>
+                  
+                  <div class="signature-menu">
+                  <div class="food-items">
+                      <img src="images/sig/sig1.png">
+                      <div class="details">
+                          <div class="title-menu">
+                              <h4>Crostini</h4>
+                              <h5 class="price-menu"> $8 </h5>
+                          </div>
+                          <p>The bread was often stale, so it had to be soaked in a liquid such as wine to make it edible. Today, crostini are topped with virtually anything from olive oil, fresh herbs, and garlic to cheeses, olives, spinach, and tomatoes.</p>
+                          <button>Add To Order</button>
+                      </div>
+                  </div>
+          
+                  <div class="food-items">
+                      <img src="images/sig/sig2.png">
+                      <div class="details">
+                          <div class="title-menu">
+                              <h4>Seafood stew with Saffron Zabagilione</h4>
+                              <h5 class="price-menu"> $15 </h5>
+                          </div>
+                          <p>To prepare this brothy stew full of wonderfully moist snapper, tender squid and plump mussels and clams. A lush saffron zabaglione, which gets stirred into the stew, presents another fun challenge: to cook egg yolks in wine slowly over the gentle heat of simmering water until they're fluffy but not scrambled.</p>
+                          <button>Add To Order</button>
+                      </div>
+                  </div>
+          
+                  <div class="food-items">
+                      <img src="images/sig/sig3.png">
+                      <div class="details">
+                          <div class="title-menu">
+                              <h4>Gorgonzola, Fig and Pancetta Pizza</h4>
+                              <h5 class="price-menu"> $8 </h5>
+                          </div>
+                          <p>This sweet and salty pizza is topped with salty pancetta, gorgonzola, and juicy fresh figs.</p>
+                          <button>Add To Order</button>
+                      </div>
+                  </div>
+          
+                  <div class="food-items">
+                      <img src="images/sig/sig4.png">
+                      <div class="details">
+                          <div class="title-menu">
+                              <h4>Spaghetti with Anchovy Carbonara</h4>
+                              <h5 class="price-menu"> $12 </h5>
+                          </div>
+                          <p>Chris Cosentino adds briny flavor to his pasta with cured tuna heart. He shaves it on right before serving. This recipe calls for anchovies, rather than the tuna heart Cosentino uses. Egg yolks form a silky sauce.</p>
+                          <button>Add To Order</button>
+                      </div>
+                  </div>
+          
+                  <div class="food-items">
+                      <img src="images/sig/sig5.png">
+                      <div class="details">
+                          <div class="title-menu">
+                              <h4>Affogato espresso martini</h4>
+                              <h5 class="price-menu"> $15 </h5>
+                          </div>
+                          <p>Perfect for after dinner, this coffee treat is a little taste of the Italian Riviera.</p>
+                          <button>Add To Order</button>
+                      </div>
+                  </div>
+          
+                  <div class="food-items">
+                      <img src="images/sig/sig6.png">
+                      <div class="details">
+                          <div class="title-menu">
+                              <h4>Negroni</h4>
+                              <h5 class="price-menu"> $10 </h5>
+                          </div>
+                          <p>Negroni is made from one part of gin, one part of Campari, and one part of red Vermouth, and garnished with a slice of orange. This famous Italian beverage is now one of the most common cocktails in the world. The Negroni family set up a distillery that still makes a readily mixed version called the Antico Negroni.</p>
+                          <button>Add To Order</button>
+                      </div>
+                  </div>
+                  
+              </div>
+              
+          </div>
+          <div class="btn_allmenu">
+              <button class="btn_menu justify-content-center">See all menu</button>
+            </div>
+          </div>
+            </div>
+              </div>
+      
+          </div>
+          
+    </section>
+
+    
+    
+
 </body>
 </html>
