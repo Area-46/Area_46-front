@@ -7,30 +7,20 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body{
- background-color: #000;
-}
-#home{
-    margin: auto;
-}
-header{
-    margin: 0;
+.containerHeader{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    height: 80px;
     display: flex;
     justify-content: space-between;
+    padding: 2%;
     align-items: center;
-    transition: 0.6%;
-    padding-right: 200px;
-    padding-top: 50px;
+    transition: 0.5s;
     z-index: 100000;
     background-color: #000;
 }
 
 header .logo{
-    margin-left: 50px;
     position: relative;
     font-weight: 700;
     color: white;
@@ -39,11 +29,6 @@ header .logo{
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
-}
-
-header .sticky{
-    padding: 5px 100px;
-    background: white;
 }
 
 header ul{
@@ -66,22 +51,29 @@ header ul li a{
     letter-spacing: 2px;
     font-weight: 500px;
     transition: 0.5s;
-    font-size: 20px;
+    font-size: 30px;
     display: block;
 }
+
 header ul li a:hover,
 header ul li a.active{
     color: yellow;
     background: none;
 }
 
-.banner {
+header .sticky{
+    padding: 5px 100px;
+    background: white;
+}
+
+/* .banner {
     position: relative;
     width: 100%;
     height: 10vh;
     background: fixed;
     background-size: cover;
-}
+} */
+
 header .menu-btn i{
     color: white;
     font-size: 22px;
@@ -94,48 +86,68 @@ header .menu-btn i{
 }
 
 @media (max-width: 940px) {
-    header .menu-btn i{
-        display: block;
-    }
-    #click:checked ~ .menu-btn i:before{
-    content: "\f00d";
-  }
-    header ul{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background: #111;
-        height: 100%;
-        width: 100%;
-        display: block;
-        text-align: center;
-        transition: all 0.3s ease;
-    }
-    
-    #click:checked ~ ul{
-        left: 0%;
-    }
-    header ul li{
-        margin: 40px 0;
-        font-size: 20px;
-    }
-
+        header .menu-btn i{
+            display: block;
+        }
+        #click:checked ~ .menu-btn i:before{
+        content: "\f00d";
+      }
+        header ul{
+            position: fixed;
+            top: 80px;
+            left: -100%;
+            background: #111;
+            height: 100%;
+            width: 100%;
+            display: block;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        #click:checked ~ ul{
+            left: 0%;
+        }
+        header ul li{
+            margin: 40px 0;
+            font-size: 20px;
+        }    
 }
 
-header .sticky .logo,
-header .sticky ul li a{
+.sticky .logo,
+.sticky ul li a{
     color: #000;
+}
+
+.sticky {
+    background-color: #fff;
+}
+
+.sticky .menu-btn i{
+    color: black;
+}
+
+.sticky ul{
+    background-color: #fff;
+}
+
+#home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#home .container{
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    z-index: 1;
 }
 
 .banner-thumb >img{
     height: 100vh;
     width: 100vw;
-}
-
-#home .container{
-    position: absolute;
-  font-size: 18px;
-  top:300%;
+    z-index: 0;
 }
 
 .banner-inner h3{
@@ -148,11 +160,20 @@ header .sticky ul li a{
     text-align: center;
     margin-top: 10px;
     color: white;
-    font-size: 70px;
+    font-size: 5.5em;
 }
 
-#menu{
-    margin-top: 100px;
+#menu {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0px;
+    background-color: white;
+}
+
+.containerrow {
+    position: relative;
+    width: 100%;
     background-color: white;
 }
 
@@ -164,7 +185,6 @@ text-align: center;
     padding-bottom: 100px;
     padding-top: 100px;
 }
-
 
 .signature-menu{
     padding: 0;
@@ -187,19 +207,18 @@ text-align: center;
     margin: 0 20px;
     background-color: #000;
 }
-.food-items img{
-    
+
+.food-items img{   
     position: relative;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
-
 .details{
     padding: 20px 10px;
     display: grid;
     grid-template-rows: auto 1fr 50px;
     grid-row-gap: 15px;
-    width: fit-content;
+    width: 100%;
 }
 .price-menu{
     color: yellow;
@@ -216,11 +235,10 @@ text-align: center;
     font-size: 18px;
 }
 .price-menu{
-    margin: auto;
     text-align: right;
 }
 .details>p{
-    margin: auto;
+    /* margin: auto; */
     color: white;
     font-size: 15px;
     line-height: 28px;
@@ -229,14 +247,14 @@ text-align: center;
     text-align: left;
 }
 .details>button{
-    margin: auto;
+    /* margin: auto; */
     background-color: yellow;
     border: none;
     color: black;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
-    width: 340px;
+    width: 100%;
     height: 50px;
     cursor: pointer;
     color: black;
@@ -244,15 +262,18 @@ text-align: center;
     outline: 5;
 }
 
-
 .details>button:hover{
     background-color: black;
     color: white;
 }
+
 .btn_allmenu{
+    position: relative;
     border-radius: 50px;
     padding-top: 50px;
-    margin-left: 30%;
+    margin-left: 0%;
+    width: 85%;
+    left: calc(50% -  (697px / 2));
 }
 
 .btn_menu:hover{
@@ -261,15 +282,17 @@ text-align: center;
 }
 
 .btn_menu{
-    left: 50%;
-    margin: auto;
+    justify-content: center; 
+    display: flex;
+    align-items: center;
+    text-align: center; 
     background-color: yellow;
     border: none;
     color: black;
     font-size: 16px;
     font-weight: 600;
     border-radius: 5px;
-    width: 340px;
+    width: 100%;
     height: 50px;
     cursor: pointer;
     color: black;
@@ -277,8 +300,19 @@ text-align: center;
     outline: 5;
 }
 
+.btn_menu p{
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
 #contact {
-    margin-top: 50px;
+    position: relative;
+    top: 3450px;
+    width: 100%;
+    /* margin-top: 50px; */
     background-color: black;
 }
 
@@ -292,6 +326,11 @@ text-align: center;
     width: 50%;
     padding: 15px;
     color: whitesmoke;
+  }
+  
+  #contact .row{
+    position: relative;
+    width: 100%;
   }
   
   /* Clear floats after the columns */
@@ -348,6 +387,78 @@ padding-bottom: 30px;
     width: 33%;
     padding: 5px;
 }
+
+@media all and (max-width: 400px) {
+    .containerHeader{
+        height: 50px;
+    }
+
+    header .logo{
+        font-weight: 700;
+        font-size: 1.2em;
+        letter-spacing: 2px;
+    }
+
+    header ul{
+        top: 50px;
+        background: #111;
+    }
+
+    
+    header ul li a{
+        font-size: 20px;
+    }
+
+    #home .container{
+        top: 200px;
+    }
+
+    .banner-inner h1{
+        font-size: 3.2em;
+    }
+
+    .food-items img{   
+        position: relative;
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .btn_allmenu{
+        left: calc(50% -  (331.84px / 2));
+    }
+
+    #contact {
+        position: relative;
+        top: 3000px;
+        width: 100%;
+        /* margin-top: 50px; */
+        background-color: black;
+    }
+
+    .gallery{
+        color: white;
+        padding-top: 50px;
+    }
+
+    .allimg-w{
+        position: relative;
+        width: 100%;
+        height: 600px;
+        align-content: center;
+    }
+
+    .img-w img{
+        float: none;
+        width: 100%;
+        padding-left: 25px;
+    }
+
+
+}
+
+/* old  */
+
+
 
 
 
