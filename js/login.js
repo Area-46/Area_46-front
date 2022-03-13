@@ -5,10 +5,10 @@ let adminID;
 let adminPass;
 
 const checkAccount = (e) => {
-    if ((adminID === "area" || adminID === "ASD") && adminPass === "123") {
+    if ((adminID === "area" || adminID === "AREA") && adminPass === "123") {
         console.log("Status : " + "success")
         alert("Login success.")
-        window.location.href="index.html";
+        window.location.href="kitchen_order.html";
         }
     else {
         console.log("Status : " + "fail")
