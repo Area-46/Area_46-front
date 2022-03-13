@@ -35,8 +35,14 @@ const btnsearch = document.getElementById("search");
 //     });
 // }) 
 
-const inputSearch = document.getElementById("search-input");
-inputSearch.addEventListener("keyup", (e) => {
+const onblur = (e) => {
+    contentAll.forEach(e => {
+        e.style.display = "block"
+    });
+}
+
+const onkeyup = (e) => {
+    inputSearch.addEventListener("blur", onblur)
     contentAll.forEach(e => {
         e.style.display = "block"
     });
@@ -53,13 +59,15 @@ inputSearch.addEventListener("keyup", (e) => {
                 element.style.display = "none"
         });
     }
-})
+}
 
-// inputSearch.addEventListener("blur", (e) => {
-//     contentAll.forEach(e => {
-//         e.style.display = "block"
-//     });
-// }
+const inputSearch = document.getElementById("search-input");
+inputSearch.addEventListener("keyup", onkeyup)
+inputSearch.addEventListener("blur", onblur)
+
+btnsearch.addEventListener('mouseenter', (e) => {
+    inputSearch.removeEventListener("blur", onblur)
+})
 
 
 
