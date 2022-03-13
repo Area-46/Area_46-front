@@ -39,7 +39,7 @@
         </label>
         <ul>
             <li><a href="#home">HOME</a></li>
-            <li><a href="#menu">MENU</a></li>
+            <li><a href="/menu.html">MENU</a></li>
             <li><a href="#contact">CONTACT</a></li>
             <li><a href="#">ORDER</a></li>
         </ul>
@@ -50,7 +50,6 @@
         <script type="text/javascript">
             window.addEventListener("scroll", function(){
                 var header = document.querySelector("header");
-                console.log(window.scrollY)
                 if (window.scrollY > 0)
                     header.classList.add("sticky");
                 else header.classList.remove("sticky");
@@ -168,7 +167,7 @@
           </div> 
     </section>
 
-    <footer id="contact">
+    <section id="contact">
            <div class="information">
             <div class="row">
                 <div class="column">
@@ -213,7 +212,7 @@
                 </div>
            </div>
            </div>
-    </footer>
+        </section>
     
 </body>
 </html>
