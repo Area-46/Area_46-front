@@ -33,13 +33,13 @@ jobs:
         with:
           context: .
           push: true
-          tags: popbobkok5019/234-deploy-project-frontend:latest
+          tags: popbobkok5019/234-deploy-project-frontend-main:latest
       -
         name: prepare the docker-compose run
         run: |
-              mkdir 234-deploy-project-frontend
-              cp docker-compose.yml 234-deploy-project-frontend/docker-compose.yml
-              cd 234-deploy-project-frontend
+              mkdir 234-deploy-project-frontend-main
+              cp docker-compose.yml 234-deploy-project-frontend-main/docker-compose.yml
+              cd 234-deploy-project-frontend-main
               docker-compose -H ${{ secrets.HOST_SERVER  }} down
               docker-compose -H ${{ secrets.HOST_SERVER  }} pull
               docker-compose -H ${{ secrets.HOST_SERVER  }} up -d
