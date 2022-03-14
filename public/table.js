@@ -13,3 +13,8 @@ optionsList.forEach(o => {
         optionsContainer.classList.remove("active");
     });
 });
+
+var button = document.getElementById("setbutton");
+button.onclick = function() {
+    console.log(selected.innerHTML);
+}

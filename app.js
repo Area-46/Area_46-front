@@ -6,7 +6,13 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 app.use(express.json({ limit: '20mb' }));
+const TABLE = [];
 
+app.get('/', (req, res) => {
+    res.render('table', {
+        TABLE: TABLE
+    });
+});
 
 app.get('/home', function(req, res) {
     res.render('index');
