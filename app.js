@@ -13,6 +13,9 @@ app.get('/home', function(req, res) {
 });
 
 
+app.get('/order', function(req, res) {
+    res.render('order');
+});
 
 
 app.listen(3000, function() {
