@@ -27,6 +27,11 @@ app.get('/menu', function(req, res) {
     res.render('menu');
 });
 
+app.get('/kitchen-order', function(req, res) {
+    res.render('order_kitchen');
+});
+
+
 app.listen(3000, function() {
     console.log("Server started on port 3000");
 });
