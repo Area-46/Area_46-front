@@ -12,8 +12,9 @@ app.get('/home', function(req, res) {
     res.render('index');
 });
 
-
-
+app.get('/menu', function(req, res) {
+    res.render('menu');
+});
 
 app.listen(3000, function() {
     console.log("Server started on port 3000");
