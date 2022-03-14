@@ -5,4 +5,4 @@ services:
     restart: always
     image:  popbobkok5019/234-deploy-project-frontend:latest
     ports:
-      - "8050:8080"
+      - "8051:8080"
