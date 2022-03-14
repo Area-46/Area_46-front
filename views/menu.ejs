@@ -1,0 +1,362 @@
+<%- include('partials/header_menu'); %>
+    <header class="containerHeader">
+        <a href="#" class="logo">Area-46</a>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+           <i class="fas fa-bars"></i> 
+        </label>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/menu.html">MENU</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+            <li><a href="/order_customer.html">ORDER</a></li>
+        </ul>
+    </header>
+
+
+    <section class="banner">
+        <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                if (window.scrollY > 0)
+                    header.classList.add("sticky");
+                else header.classList.remove("sticky");
+            })
+        </script>
+    </section>
+
+    <div class="main-container">
+        <h2>Menu Categories</h2>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Search food name here . . ." />
+            <button id="search">Search</button>
+        </div>
+        <div class="filter-container">
+            <div class="category-head">
+                <ul>
+                    <div class="category-title active" id="all">
+                        <li>All</li>
+                        <span class="material-icons">
+                            border_all
+                        </span>
+                    </div>
+                    <div class="category-title" id="apprtizer">
+                        <li>Appetizer</li>
+                        <span class="material-icons">
+                            cookie
+                        </span>
+                    </div>
+                    <div class="category-title" id="main">
+                        <li>Main</li>
+                        <span class="material-icons">
+                            local_pizza
+                        </span>
+                    </div>
+                    <div class="category-title" id="dessert">
+                        <li>Dessert</li>
+                        <span class="material-icons">
+                            cake
+                        </span>
+                    </div>
+                    <div class="category-title" id="drink">
+                        <li>Drink</li>
+                        <span class="material-icons">
+                            wine_bar
+                        </span>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="posts-collect">
+                <div class="posts-main-container">
+                    <!-- single post -->
+                    <div class="all drink Aperitivo">
+                        <div class="post-img">
+                            <img src="./images/menu//drink/d1.png" alt="post">
+                            <span class="category-name">drink</span>
+                        </div>
+                        <div class="title-menu">
+                            <h4>Aperitivo</h4>
+                            <h5 class="price-menu"> $10 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all drink">
+                        <div class="post-img">
+                            <img src="./images/menu//drink/d2.png" alt="post">
+                            <span class="category-name">drink</span>
+                        </div>
+                        <div class="title-menu">
+                            <h4>Negroni</h4>
+                            <h5 class="price-menu"> $10 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all drink">
+                        <div class="post-img">
+                            <img src="./images/menu//drink/d3.png" alt="post">
+                            <span class="category-name">drink</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Campari</h4>
+                            <h5 class="price-menu"> $10 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all drink">
+                        <div class="post-img">
+                            <img src="./images/menu//drink/d4.png" alt="post">
+                            <span class="category-name">drink</span>
+                        </div>
+                        <div class="title-menu">
+                            <h4>Americano</h4>
+                            <h5 class="price-menu"> $10 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all drink">
+                        <div class="post-img">
+                            <img src="./images/menu//drink/d5.png" alt="post">
+                            <span class="category-name">drink</span>
+                        </div>
+                        <div class="title-menu">
+                            <h4>Bellini</h4>
+                            <h5 class="price-menu"> $10 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+
+                    <!-- single post -->
+                    <div class="all apprtizer">
+                        <div class="post-img">
+                            <img src="./images/menu//appe/a1.png" alt="post">
+                            <span class="category-name">apprtizer</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Crostini</h4>
+                            <h5 class="price-menu"> $8 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all apprtizer">
+                        <div class="post-img">
+                            <img src="./images/menu//appe/a2.png" alt="post">
+                            <span class="category-name">apprtizer</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Grassini</h4>
+                            <h5 class="price-menu"> $8 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all apprtizer">
+                        <div class="post-img">
+                            <img src="./images/menu//appe/a3.png" alt="post">
+                            <span class="category-name">apprtizer</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Pizzette</h4>
+                            <h5 class="price-menu"> $8 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all apprtizer">
+                        <div class="post-img">
+                            <img src="./images/menu//appe/a4.png" alt="post">
+                            <span class="category-name">apprtizer</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Taralli</h4>
+                            <h5 class="price-menu"> $8 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all apprtizer">
+                        <div class="post-img">
+                            <img src="./images/menu//appe/a5.png" alt="post">
+                            <span class="category-name">apprtizer</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Panelle</h4>
+                            <h5 class="price-menu"> $8 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all dessert">
+                        <div class="post-img">
+                            <img src="./images/menu//dessert/de1.png" alt="post">
+                            <span class="category-name">dessert</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Affogato espresso martini</h4>
+                            <h5 class="price-menu"> $15 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all dessert">
+                        <div class="post-img">
+                            <img src="./images/menu//dessert/de2.png" alt="post">
+                            <span class="category-name">dessert</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Choc-hazelnut baci chessecake</h4>
+                            <h5 class="price-menu"> $15 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all dessert">
+                        <div class="post-img">
+                            <img src="./images/menu//dessert/de3.png" alt="post">
+                            <span class="category-name">dessert</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Tiramisu</h4>
+                            <h5 class="price-menu"> $15 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all dessert">
+                        <div class="post-img">
+                            <img src="./images/menu//dessert/de4.png" alt="post">
+                            <span class="category-name">dessert</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Bomboloni</h4>
+                            <h5 class="price-menu"> $15 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all dessert">
+                        <div class="post-img">
+                            <img src="./images/menu//dessert/de5.png" alt="post">
+                            <span class="category-name">dessert</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Italian love cake</h4>
+                            <h5 class="price-menu"> $15 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+
+                    <!-- single post -->
+                    <div class="all main">
+                        <div class="post-img">
+                            <img src="./images/menu//main/m1.png" alt="post">
+                            <span class="category-name">main</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Seafood stew with Saffron Zabaglione</h4>
+                            <h5 class="price-menu"> $15 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all main">
+                        <div class="post-img">
+                            <img src="./images/menu//main/m2.png" alt="post">
+                            <span class="category-name">main</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Tuscan tomato bread</h4>
+                            <h5 class="price-menu"> $12 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all main">
+                        <div class="post-img">
+                            <img src="./images/menu//main/m3.png" alt="post">
+                            <span class="category-name">main</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Gorgonzola, Fig and Pancetta Pizza</h4>
+                            <h5 class="price-menu"> $8 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all main">
+                        <div class="post-img">
+                            <img src="./images/menu//main/m4.png" alt="post">
+                            <span class="category-name">main</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Pea and bacon risotto</h4>
+                            <h5 class="price-menu"> $12 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                    <div class="all main">
+                        <div class="post-img">
+                            <img src="./images/menu//main/m5.png" alt="post">
+                            <span class="category-name">main</span>
+                        </div>
+
+                        <div class="title-menu">
+                            <h4>Osso buco with citrus Gremolata</h4>
+                            <h5 class="price-menu"> $12 </h5>
+                        </div>
+                        <button type="button" class="read-btn">Order</button>
+                    </div>
+                    <!-- end of single post -->
+                    <!-- single post -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS file -->
+    <script src="../menu.js"></script>
+
+    </body>
+
+    </html>
