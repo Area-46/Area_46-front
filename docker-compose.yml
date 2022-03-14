@@ -1,8 +1,8 @@
 version: '3'
 services:
   app:
-    container_name: 234-deploy-project-frontend_NEW_DEV
+    container_name: 234-deploy-project-frontend_new_dev
     restart: always
-    image:  popbobkok5019/234-deploy-project-frontend_NEW_DEV:latest
+    image:  popbobkok5019/34-deploy-project-frontend_new_dev:latest
     ports:
       - "8050:8080"
