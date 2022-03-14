@@ -8,7 +8,7 @@ const checkAccount = (e) => {
     if ((adminID === "area" || adminID === "AREA") && adminPass === "123") {
         console.log("Status : " + "success")
         alert("Login success.")
-        window.location.href = "kitchen_order";
+        window.location.href = "kitchen-order";
     } else {
         console.log("Status : " + "fail")
         alert("Login fail.")

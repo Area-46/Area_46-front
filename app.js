@@ -27,8 +27,8 @@ app.get('/menu', function(req, res) {
     res.render('menu');
 });
 
-app.get('/login', function(req, res) {
-    res.render('login');
+app.get('/kitchen-login', function(req, res) {
+    res.render('login_kitchen');
 });
 
 app.get('/kitchen-order', function(req, res) {
