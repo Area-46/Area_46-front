@@ -39,6 +39,18 @@ app.get('/kitchen-status', function(req, res) {
     res.render('kitchen_status');
 });
 
+app.post('/addMenu', (req, res) => {
+    console.log("\nI got request!!");
+
+    TITLE = req.body.title;
+    PRICE = req.body.price;
+    IMG = req.body.imageSrc;
+    data = [TITLE, PRICE, IMG];
+
+    posts.push(data);
+    console.log(posts);
+});
+
 
 app.listen(3000, function() {
     console.log("Server started on port 3000");
