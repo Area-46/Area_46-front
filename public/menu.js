@@ -69,6 +69,22 @@ btnsearch.addEventListener('mouseenter', (e) => {
     inputSearch.removeEventListener("blur", onblur)
 })
 
+for (let i=1;i<=20;i++) {
+    const btnorders = document.getElementById(`orders${i}`) 
+    btnorders.addEventListener('click', () => {
+        // console.log(btnorders.classList[2])
+        const food = document.querySelector(`.${btnorders.classList[2]}`)
+        // console.log(food.childNodes[1].childNodes[1].getAttribute('src'))
+        const xhttp = new XMLHttpRequest();
+        xhttp.open('POST', "http://localhost:3000/users/create")
+        xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8")
+        xhttp.send(JSON.stringify({
+            "id": 1,
+            "tableNumber": "3",
+            "orders": [
+                        {"foodName": food.childNodes[3].childNodes[1].textContent.toString(), "price": food.childNodes[3].childNodes[3].textContent.toString(), "url": food.childNodes[1].childNodes[1].getAttribute('src').toString(), "count": "1"}, 
+                    ]
+        }))
+    }) 
+}
 
-
-// console.log(contentAll);

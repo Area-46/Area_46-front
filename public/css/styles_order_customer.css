@@ -158,3 +158,77 @@ body{
     }
 
 }
+
+.table{
+    position: relative;
+    left: calc(50% - 350.5px);
+    top: 120px;
+    width: 90%;
+    height: auto;
+    color: #fff;
+    background-color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+
+.containerorder {
+    position: relative;
+    left: 0;
+    padding-left: 10px;
+    width: 95%;
+    height: 120px;
+    color: #fff;
+    background-color: rgb(41, 40, 40);
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.block {
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    padding: 5px;
+    
+    /* height: 200px; */
+}
+
+.block img {
+    position: relative;
+    width: 120px;
+    height: auto;
+    left: 0;
+    border-radius: 15px;
+    left: 25px;
+}
+
+.table p{
+    position: absolute;
+    display: inline-block;
+}
+
+.containerorder .name {
+    position: absolute;
+    left: 220px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    top: calc(50% - 24px);
+}
+
+.containerorder .price {
+    position: absolute;
+    right: 10px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    top: calc(50% - 24px);
+}
+
+.containerorder .count {
+    position: absolute;
+    right: 250px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    top: calc(50% - 24px);
+}
